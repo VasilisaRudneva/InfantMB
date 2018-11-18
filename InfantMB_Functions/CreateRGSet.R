@@ -20,8 +20,6 @@ CreateRGSet <- function(path_to_idats) {
     } else {
       targets[i,"Basename"]=gsub("_Red.idat", "", this_res[length(this_res)])
     }
-
-    targets[i,"Basename"]=gsub("_Red.idat", "", this_res[length(this_res)])
     targets[i,"folder"]=paste(as.vector(this_res[-length(this_res)]), collapse = "/")
     targets[i,"ArrayTypes"]="NA"
   }
