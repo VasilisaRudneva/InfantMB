@@ -4,6 +4,8 @@ Code that reproduces figures from the Robinson GW &amp; Rudneva VA et al., Lance
 
 ## Load libraries
 
-`libs=c("minfi", "limma", "minfiData", "stringr", "Rtsne", "weights")`
-`lapply(libs, require, character.only = TRUE)`
+``
+libs=c("minfi", "limma", "minfiData", "stringr", "Rtsne", "weights")
+lapply(libs, require, character.only = TRUE)
+``
 
