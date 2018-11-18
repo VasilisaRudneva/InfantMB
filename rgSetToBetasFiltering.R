@@ -17,7 +17,6 @@
 rgSetToBetasFiltering <- function(rgSet, material) {
   
   mSetRaw <- preprocessRaw(rgSet)
-  all_samples=sampleNames(rgSet)
   
   Meth=log2(minfi::getMeth(mSetRaw))
   Unmeth=log2(minfi::getUnmeth(mSetRaw))
@@ -38,8 +37,7 @@ rgSetToBetasFiltering <- function(rgSet, material) {
   }
   
   mSetRaw=MethylSet(Meth, Unmeth)
-  
-  
+   
   # load appropriate library
   if (annotation(rgSet)[[1]] == "IlluminaHumanMethylationEPIC"){
     suppressMessages(library("IlluminaHumanMethylationEPICanno.ilm10b3.hg19"))
