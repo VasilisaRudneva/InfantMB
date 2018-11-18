@@ -1,9 +1,18 @@
 # Vasilisa A. Rudneva
 # Nov 2018
 # 
-# This function takes an object of class MethylSet as an input
-# Preprocesses and filters the methylation data according to the array type
-# Calculates and returs beta values
+# This function takes an object of class MethylSet and a data.frame with samples material for batch effect correction as input
+# > head(material)
+#                 id    mat
+#1 9297949037_R03C02 Frozen
+#2 9297949037_R05C02 Frozen
+#3 9305216163_R01C01 Frozen
+#4 9305216153_R05C02 Frozen
+#5 9297949040_R01C01 Frozen
+#6 9297949147_R06C02 Frozen
+#
+# Preprocesses, removes batch effects, and filters the methylation data according to the array type
+# Returs beta values
 
 rgSetToBetasFiltering <- function(rgSet, material) {
   
