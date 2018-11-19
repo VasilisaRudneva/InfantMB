@@ -13,6 +13,7 @@ libs=c("minfi", "limma", "minfiData", "stringr", "Rtsne", "weights")
 lapply(libs, require, character.only = TRUE)
 
 rgSet=CreateRGSet(path_to_idats)
+
 material=masterTable[match(sampleNames(rgSet), masterTable$METH_450K),c("METH_450K", "Material")]; colnames(material)=c("id", "mat")
 
 bVals=rgSetToBetasFiltering(rgSet, material)
