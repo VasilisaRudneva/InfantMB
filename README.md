@@ -46,3 +46,10 @@ legend("topright", legend = c("SHH", "Group_3", "Group_4"), col = color_scheme, 
 ```
 ### Oncoprint
 
+### DBSCAN
+```
+i.dbscan <- dbscan::dbscan(Y, eps = 10, minPts = 10)$cluster
+names(i.dbscan) <- rownames(Y)
+table(i.dbscan)
+```
+
