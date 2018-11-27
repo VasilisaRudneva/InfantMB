@@ -27,7 +27,7 @@ setwd(dir)
 libs=c("minfi", "limma", "minfiData", "stringr", "Rtsne", "weights")
 lapply(libs, require, character.only = TRUE)
 ```
-### Preprocess DNA methylation data using R
+### Preprocess DNA methylation data
 ```
 rgSet=CreateRGSet(path_to_idats)
 
