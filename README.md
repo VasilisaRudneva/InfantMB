@@ -1,5 +1,5 @@
 ## Description
-R code that reproduces figures from the [Robinson GW &amp; Rudneva VA et al., Lancet Oncology 2018](https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30204-3/fulltext) paper
+R code that reproduces figures from [Robinson GW &amp; Rudneva VA et al., Lancet Oncology 2018](https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30204-3/fulltext)
 
 ## Workflow
 
