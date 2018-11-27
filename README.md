@@ -37,7 +37,7 @@ bVals=rgSetToBetasFiltering(rgSet, material)
 
 Y=RuntSNE(bVals)
 ```
-### Make t-SNE plot
+### t-SNE structure
 ```
 color_scheme = c("SHH"="red3", "Group_3"="darkgoldenrod2", "Group_4"="darkgreen")
 plot(Y, cex=0.75, col=color_scheme[masterTable[match(rownames(Y), masterTable$METH_450K),]$Subgroup],las=2, 
@@ -45,5 +45,5 @@ plot(Y, cex=0.75, col=color_scheme[masterTable[match(rownames(Y), masterTable$ME
           pch=19)
 legend("topright", legend = c("SHH", "Group_3", "Group_4"), col = color_scheme, pch=19)
 ```
-### Make oncoprint
+### Oncoprint
 
