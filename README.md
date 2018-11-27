@@ -32,15 +32,12 @@ lapply(libs, require, character.only = TRUE)
 ### Preprocess DNA methylation data
 ```
 rgSet=CreateRGSet(path_to_idats)
-
 material=masterTable[match(sampleNames(rgSet), masterTable$METH_450K),c("METH_450K", "Material")]; colnames(material)=c("id", "mat")
-
 bVals=rgSetToBetasFiltering(rgSet, material)
-
-Y=RuntSNE(bVals)
 ```
 ### t-SNE structure
 ```
+Y=RuntSNE(bVals)
 color_scheme = c("SHH"="red3", "Group_3"="darkgoldenrod2", "Group_4"="darkgreen")
 plot(Y, cex=0.75, col=color_scheme[masterTable[match(rownames(Y), masterTable$METH_450K),]$Subgroup],
           las=2, main=paste(dim(Y)[1], " Infant MB samples\n","most variable probes (SD > 0.25)", sep=""),
