@@ -22,8 +22,8 @@ masterTable=masterTable[,-1]
 ### Set dependencies
 ```
 rm(list=ls())
-dir=""
-path_to_idats="/User/Documents/IDAT/"
+dir="/User/Documents/InfantMB/"
+path_to_idats="/User/Documents/InfantMB/idats/"
 setwd(dir)
 
 libs=c("minfi", "limma", "minfiData", "stringr", "Rtsne", "weights")
