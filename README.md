@@ -6,6 +6,8 @@ R code that reproduces figures from [Robinson GW &amp; Rudneva VA et al., Lancet
 View genetic alterations and download metadata from [PeCan](https://pecan.stjude.cloud/proteinpaint/study/MB-SJYC07):
 `Data > Downloads > Matrix TSV`
 
+Resulting file [heatmap.tsv](https://github.com/VasilisaRudneva/InfantMB/blob/master/Data/heatmap.tsv)
+
 ### Preprocess metadata
 ```
 require(data.table)
