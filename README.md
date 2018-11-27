@@ -32,7 +32,8 @@ lapply(libs, require, character.only = TRUE)
 ### Preprocess DNA methylation data
 ```
 rgSet=CreateRGSet(path_to_idats)
-material=masterTable[match(sampleNames(rgSet), masterTable$METH_450K),c("METH_450K", "Material")]; colnames(material)=c("id", "mat")
+material=masterTable[match(sampleNames(rgSet), masterTable$METH_450K),c("METH_450K", "Material")]
+colnames(material)=c("id", "mat")
 bVals=rgSetToBetasFiltering(rgSet, material)
 ```
 ### t-SNE structure
