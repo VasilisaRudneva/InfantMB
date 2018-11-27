@@ -23,7 +23,7 @@ masterTable=masterTable[,-1]
 ```
 rm(list=ls())
 dir=""
-path_to_idats=""
+path_to_idats="/User/Documents/IDAT/"
 setwd(dir)
 
 libs=c("minfi", "limma", "minfiData", "stringr", "Rtsne", "weights")
