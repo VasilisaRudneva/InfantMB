@@ -43,7 +43,7 @@ color_scheme = c("SHH"="red3", "Group_3"="darkgoldenrod2", "Group_4"="darkgreen"
 plot(Y, cex=0.75, col=color_scheme[masterTable[match(rownames(Y), masterTable$METH_450K),]$Subgroup],las=2, 
           main=paste(dim(Y)[1], " Infant MB samples\n","most variable probes (SD > 0.25)", sep=""),
           pch=19)
-legend("topright", legend = c("SHH", "Group_3", "Group_4"), col = SUBGROUP, pch=19)
+legend("topright", legend = c("SHH", "Group_3", "Group_4"), col = color_scheme, pch=19)
 ```
 ### Make oncoprint
 
